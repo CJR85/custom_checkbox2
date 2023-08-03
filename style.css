@@ -66,4 +66,11 @@ label span::after {
   border-width: 0 6px 6px 0;
   transform: rotate(45deg);
   opacity: 0;
+  transition: width 0.5s, height 0.5s, opacity 0.5s;
+}
+
+input:checked ~ span::after {
+  width: 20px;
+  height: 40px;
+  opacity: 1;
 }
